@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create Class</h2>
+
+<form action="/Course/Create" method="post">
+    <input type="text" name="CourseID" placeholder="Course ID" /><br /><br />
+    <input type="text" name="Title" placeholder="Title" /><br /><br />
+    <input type="text" name="Credits" placeholder="Credits" /><br /><br />
+    <input type="submit" class="btn btn-group" value="Add New Course" /><br /><br />
+</form>
+
+@if (ViewBag.ErrorMessage != null)
+{
+    <p>@ViewBag.ErrorMessage</p>
+}
+
